@@ -1,3 +1,5 @@
+@import 'normalize.css';
+
 body {
     display: flex;
     justify-content: center;
@@ -6,20 +8,28 @@ body {
     background: black;
 }
 
-header, survival {
-    background-color: #02160b
+.hero {
+    width: 100%;
+    height: 779px;
+    background: url(./assets/Rectangle.png);
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
+.heroContent {
+    margin: 0 auto;
     width: 1200px;
 }
 
-header {
+ul {
+    padding: 0;
+}
+
+/* HEADER */
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    height: 102.88px;
 }
 
 .logo {
@@ -29,41 +39,111 @@ header {
     align-items: center;
 }
 
-.logo figure img {
-    width: 70px;
-    height: 60px;
-}
-
-figure {
+.logo figure {
     margin: 0;
     margin-right: 15px;
 }
 
-img {
+.logo figure img {
+    width: 70px;
+    height: 60px;
     margin: 0;
     padding: 0;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    width: 548px;
-    height: 100%;
-}
-
-a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 23px;
-    line-height: 60px;
-    color: #F7F7F7;
-    margin: 0 30px 0 30px;
-    text-decoration: none;
-}
-
-h1 {
+.logo h1 {
     font-size: 32px;
     line-height: 60px;
     text-transform: uppercase;
     color: #F7F7F7;
     font-family: 'Roboto', sans-serif;
 }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 480px;
+    height: 100%;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 480px;
+    height: 100%;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+nav ul li a button {
+    border: 2px solid #CD6326;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    color: #F7F7F7;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+nav ul li a button:hover {
+    background: #CD6326;
+    color: #F7F7F7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease;
+}
+/* END HEADER */
+
+/* SURVIVAL */
+    .survival h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 3px;
+    color: #CD6326;
+    margin-top: 100px;
+    }
+
+    .survival p {
+        width: 274px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        line-height: 27px;
+        color: #F7F7F7;
+        margin-top: 50px;
+        letter-spacing: 0.3px;
+    }
+
+    .survival button {
+        width: 160px;
+        height: 60px;
+        background: #CD6326;
+        border-radius: 5px;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+        line-height: 27px;
+        text-align: center;
+        color: #F7F7F7;
+        margin-top: 30px;
+        transition: all 0.5s ease;
+    }
+
+    .survival button:hover {
+        background: #E39128;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition: all 0.5s ease;
+    }
+/* END SURVIVAL */
