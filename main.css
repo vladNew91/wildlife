@@ -1,5 +1,3 @@
-
-
 .hero {
     display: flex;
     margin: 0 auto;  
@@ -99,7 +97,7 @@ nav ul li a button:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-nav ul li a button:active {
+nav ul li a button:focus {
     background: #8F5613;
 }
 /* END HEADER */
@@ -145,7 +143,7 @@ nav ul li a button:active {
     cursor: pointer;
 }    
 
-.survival button:active {
+.survival button:focus {
     background: #8F5613;
 }
 /* END SURVIVAL */
@@ -298,7 +296,7 @@ nav ul li a button:active {
     cursor: pointer;
 }    
 
-.sendmail input:nth-child(2):active {
+.sendmail input:nth-child(2):focus {
     background: #8F5613;
 }
 /* END GET NOTIFIED */
@@ -357,10 +355,24 @@ footer a {
     justify-content: space-between;
 }
 
-.icons ul li a {
-    display: flex;
-    align-items: center;
+.icons a {
+    width: 40px;
+    height: 40px;
 }
 
+.icons a:nth-child(1) {
+    background: url('./assets/face.svg');
+}
 
+.icons a:nth-child(2) {
+    background: url('./assets/inst.svg');
+}
+
+.icons a:nth-child(3) {
+    background: url('./assets/polka.svg');
+}
+
+.icons a:nth-child(4) {
+    background: url('./assets/telegramm.svg');
+}
 /* END FOOTER */
