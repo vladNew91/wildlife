@@ -211,15 +211,15 @@ nav ul li a button:focus {
 }
 
 .slide1 {
-    background: url(./assets/slide1.png);
+    background-image: url(./assets/slide1.png);
 }
 
 .slide2 {
-    background: url(./assets/slide2.png);
+    background-image: url(./assets/slide2.png);
 }
 
 .slide3 {
-    background: url(./assets/slide3.png);
+    background-image: url(./assets/slide3.png);
 }
 
 .slider div h4 {
@@ -376,3 +376,19 @@ footer a {
     background: url('./assets/telegramm.svg');
 }
 /* END FOOTER */
+
+.header, 
+.survival {
+    background-color: #02160b;
+    background: none;
+}
+
+.getNotified, 
+.news, 
+.slider {
+    background-color: #cccccc;
+}
+
+footer {
+    background-color: #181617;
+}
